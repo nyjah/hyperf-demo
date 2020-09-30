@@ -19,6 +19,7 @@ ENV TIMEZONE=${timezone:-"Asia/Shanghai"} \
 
 # update
 RUN set -ex \
+    && apk add wget \
     && apk update \
     # install composer
     && cd /tmp \
